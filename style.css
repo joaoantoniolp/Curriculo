@@ -1,0 +1,67 @@
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333333;
+    width: 80%;
+    margin: auto;
+}
+
+/* Cabeçalho */
+header {
+    background-color: rgb(240, 67, 30);
+    color: white;
+    padding: 20px;
+}
+
+/* Título principal */
+h1 {
+    font-size: 32px;
+}
+
+/* Subtítulo */
+h2 {
+    font-size: 22px;
+}
+
+/* Menu */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Seções */
+section {
+    background-color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Projetos */
+article {
+    margin-bottom: 15px;
+}
+
+/* Botão */
+button {
+    background-color: rgb(240, 67, 30);
+    color: white;
+    padding: 8px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+}
