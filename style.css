@@ -9,9 +9,10 @@ body {
 
 /* Cabeçalho */
 header {
-    background-color: rgb(240, 67, 30);
+    background-color: rgb(128, 0, 32);
     color: white;
     padding: 20px;
+    text-align: center;
 }
 
 /* Título principal */
@@ -37,7 +38,7 @@ nav ul li {
 /* Links */
 a {
     text-decoration: none;
-    color: white;
+    color: rgb(128, 0, 32);
 }
 
 /* Seções */
@@ -54,7 +55,7 @@ article {
 
 /* Botão */
 button {
-    background-color: rgb(240, 67, 30);
+    background-color: rgb(128, 0, 32);
     color: white;
     padding: 8px;
 }
