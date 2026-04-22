@@ -50,6 +50,13 @@ main {
 section {
     padding: 28px 0;
     border-bottom: 2px solid #dfe6ee;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    border-radius: 8px;
+}
+
+section:hover {
+    transform: translateY(-3px);
+    background-color: #fafcff;
 }
 
 section:last-child {
@@ -107,20 +114,28 @@ a:hover {
     color: rgb(89, 191, 255);
 }
 
-/* Formulário */
-input,
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #cfd8e3;
-    border-radius: 8px;
-    font-size: 14px;
-    background-color: #fafcff;
+/* Contato */
+.contato-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
 }
 
-textarea {
-    min-height: 100px;
-    resize: vertical;
+.btn-contato {
+    display: inline-block;
+    padding: 12px 18px;
+    background-color: #e8f2ff;
+    border: 1px solid #d0e2ff;
+    border-radius: 10px;
+    color: rgb(25, 89, 129);
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.btn-contato:hover {
+    background-color: rgb(89, 191, 255);
+    color: white;
 }
 
 /* Botão */
