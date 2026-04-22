@@ -1,83 +1,168 @@
 /* Estilo geral da página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333333;
-    width: 80%;
-    margin: auto;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #dde5ee;
+    color: #333;
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto;
+    line-height: 1.6;
 }
 
-/* Cabeçalho */
+/* Hero / Cabeçalho */
 header {
-    background-color: rgb(89, 191, 255);
-    color: black;
-    padding: 20px;
+    background: linear-gradient(135deg, rgb(89, 191, 255), rgb(25, 89, 129));
+    color: white;
+    padding: 35px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
-/* Título principal */
-h1 {
-    font-size: 32px;
+header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+    font-weight: 700;
 }
 
-/* Subtítulo */
-h2 {
-    font-size: 22px;
+header h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
 
-/* Menu */
-nav ul {
-    list-style: none;
+header p {
+    font-size: 15px;
+    opacity: 0.95;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 15px;
+/* Corpo principal */
+main {
+    background-color: #ffffff;
+    padding: 35px;
+    margin-top: 25px;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.10);
+    border: 1px solid #dce3eb;
+}
+
+/* Seções */
+section {
+    padding: 28px 0;
+    border-bottom: 2px solid #dfe6ee;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+/* Títulos */
+section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: rgb(25, 89, 129);
+}
+
+/* Projetos / cards */
+article {
+    margin-top: 18px;
+    padding: 18px;
+    background-color: #f8fbff;
+    border-radius: 12px;
+    border: 1px solid #dbe7f3;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease;
+}
+
+article:hover {
+    transform: translateY(-3px);
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills span {
+    background-color: #e8f2ff;
+    color: rgb(25, 89, 129);
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #d0e2ff;
 }
 
 /* Links */
 a {
     text-decoration: none;
     color: rgb(25, 89, 129);
+    font-weight: 500;
+    transition: 0.2s;
 }
 
-/* Seções */
-section {
-    background-color: white;
-    padding: 15px;
-    margin-top: 20px;
-    border-radius: 10px;
+a:hover {
+    color: rgb(89, 191, 255);
 }
 
-/* Projetos */
-article {
-    background-color: white;
-    padding: 15px;
-    margin-top: 20px;
-    margin-bottom: 15px;
-    border-radius: 10px;
+/* Formulário */
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cfd8e3;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #fafcff;
 }
 
-/* Links Profissionais */
-aside {
-    background-color: white;
-    padding: 15px;
-    margin-top: 20px;
-    border-radius: 10px;
+textarea {
+    min-height: 100px;
+    resize: vertical;
 }
 
 /* Botão */
 button {
     background-color: rgb(89, 191, 255);
     color: white;
-    padding: 8px;
-    border-radius: 5px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: rgb(25, 89, 129);
 }
 
 /* Rodapé */
 footer {
     text-align: center;
-    margin-top: 30px;
-    padding: 10px;
+    margin-top: 25px;
+    padding: 15px;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header h2 {
+        font-size: 18px;
+    }
+
+    main {
+        padding: 20px;
+    }
 }
